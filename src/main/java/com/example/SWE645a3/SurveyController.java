@@ -53,12 +53,18 @@ public class SurveyController {
 //        return surveyRepository.findById(surveyId);
     	return surveyService.getSurveyById(surveyId);
     }
-
-//    @RequestMapping(value = "/updatesurvey", method = RequestMethod.GET)
-//    @ResponseBody
-//    public SurveyModel updateStudent(@RequestBody SurveyModel survey) {
-//        return surveyRepository.save(survey);
-//    }
+    
+    @CrossOrigin(origins = "http://localhost:8080")
+    @RequestMapping(value = "/updatesurvey", method = RequestMethod.GET)
+    @ResponseBody
+    public SurveyModel updateStudent(@RequestBody SurveyModel survey) {
+    	try{
+        	return surveyRepository.save(survey);
+        }
+        catch(Exception ex){
+            throw ex;
+        }
+    }
 
     @RequestMapping(value = "/deletesurvey", method = RequestMethod.GET)
     @ResponseBody

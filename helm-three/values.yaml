@@ -5,7 +5,7 @@
 replicaCount: 3
 
 image:
-  repository:lokesh-venkata-sai/SWE645-a3
+  repository: lokesh-venkata-sai/SWE645-a3
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: latest

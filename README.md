@@ -1,4 +1,4 @@
-# SWE645 Assignment 3: RESTful Web Services and JPA
+# SWE645 Assignment 3: Student Survey Microservices System
 
 ## Project Overview
 This project involves developing a Microservices-based application using Spring Boot, RESTful Web Services, and JPA/Hibernate. 
